@@ -66,7 +66,7 @@ def button_callback(channel):
 
     if press_count == 1:
         print("First press: Starting external script...")
-        external_process = subprocess.Popen(["python3", "/home/pi/Documentos/Projetos/Demo/Start_prog/Start_prog_SL.py"]) #MODIFY
+        external_process = subprocess.Popen(["python3", "/home/pi/Documentos/Projetos/Demo/SoBot-Start-Prog-Line-Follower/Start_prog_SL.py"]) #MODIFY
     
     
     elif press_count == 2:
