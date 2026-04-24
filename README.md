@@ -24,6 +24,19 @@ Several programming languages can be used to connect via API.
 ## [Start_Button.py](Start_Button.py) 
 This code implements a push-button control system for the SoBot, allowing users to start and stop an external Python script using a single button connected to a Raspberry Pi. The first button press launches the external script, while the second press terminates it along with any child processes. The program uses GPIO for button input detection and includes debouncing to ensure reliable operation. It is designed for simplicity and robustness, making it ideal for initiating and managing tasks on the SoBot.
 
+### ⚠️ Important
+
+We recommend **avoiding general library updates** (`pip install --upgrade`).
+
+**Why?**  
+Some libraries (e.g. NumPy) introduce significant changes between versions that can break code that was previously working perfectly.
+
+### ✅ Recommended Best Practice:
+
+- Update **libraries individually**, one at a time:
+  ```bash
+  pip install numpy==2.2.6   # example of a stable version
+
 ### Code Description
 ```
 📂Start_Button
